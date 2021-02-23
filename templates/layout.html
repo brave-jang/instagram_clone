@@ -54,10 +54,10 @@
                                 </svg>
                             </a>
                             <a class="p-2 text-dark" href="#">
-                                Profile
+                                {{user}}
+                                <img src="{% url  'pydenticon_image' user.username%}" style="width: 24px; height: 24px;">
                             </a>
                         </nav>
-                        <a class="btn btn-outline-primary" href="#">Sign up</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
     {% block content %}
     {% endblock %}
 
-    <div class="border-top">
+    <div class="border-top mt-3">
         <div class="container">
             <footer class="pt-4 my-md-5 pt-md-5">
                 <div class="row">
